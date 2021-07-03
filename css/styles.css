@@ -1,0 +1,176 @@
+html,body
+{
+	overflow-x: hidden; 
+}
+.navbar-custom{
+	background: #232530;
+	width:100%;
+}
+.navbar-brand{
+	color:#25b2bc;
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+}
+.navbar-brand:hover{
+	color:#fac29a;
+}
+.nav-link{
+	color:#d5d8da;
+	font-family: "Roboto", sans-serif;
+}
+.nav-link:hover{
+	color:#d5d8da;
+	/*This is to simply UNSET Bootstrap's default hover effect, so that I can use my custom hover effect, implemented manually in JS as asked in the assignment doc.*/
+}
+
+#indexbody{
+	width:100%;
+}
+#myjumbo{
+	padding-top:10%;
+	padding-left: 15%;
+	background:#16161c;
+	margin-bottom: 0;
+}
+#myphoto{
+	max-height:400px;
+	vertical-align: middle;
+	margin-top: 1%;
+	border: 5px solid #25b2bc;
+	border-radius: 100%;
+	display: inline-block;
+}
+#introline{
+	font-family:"Raleway", sans-serif;
+	font-weight: 900;
+	color:#25b2bc;
+}
+#subhed{
+	font-family: "Roboto", sans-serif;
+	color:#d5d8da;
+}
+#clglink{
+	color:#fac29a;
+	text-decoration: underline;
+}
+
+
+#aboutme{
+	padding-top:5%;
+	padding-left: 5%;
+	background: #1c1e26;
+	color:#d5d8da;
+}
+#interhed{
+	font-family:"Raleway", sans-serif; 
+	font-weight: 900;
+	color:#25b2bc;
+}
+#interests{
+	font-family: "Roboto";
+	padding-right: 5%;
+}
+#maglink{
+	color:#fac29a;
+	text-decoration: underline;
+}
+
+#myjumbo2{
+	margin-right: 5%;
+	background:#16161c;	
+}
+#mycarousel{
+	display: block; 
+	max-height:400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#caroucaptions{
+	padding-top: 9%;
+	padding-right:10%
+}
+
+#davidimg{
+	display: block;  
+	margin-left: auto;  
+	margin-right: auto;
+}
+#uniphantimg{
+	display: block;  
+	margin-left: auto;  
+	margin-right: auto;
+}
+
+
+
+#skillbody{
+	background: #1c1e26;
+	font-family: "Roboto", sans-serif;
+}
+
+#mycontent{
+	padding:5%;
+}
+
+.form-row{
+	color: #d5d8da;
+}
+.form-control{
+	background: #232530;
+	color: #d5d8da;
+	border-color: #25b2bc;
+	border-width: 2px;
+}
+.form-control:focus {
+  border-color:#fac29a;
+  border-width: 2px;
+  color:#d5d8da;
+  background: #2e303e;
+  box-shadow: none;
+}
+#btnrow{
+	padding-top: 1%;
+	justify-content: center;
+	margin-bottom: 5%;
+}
+#skillformsubbtn{
+	color: #1c1e26;
+	background: #25b2bc;
+	border-width: 0px;
+}
+table.table-bordered{
+    border:2px solid #25b2bc;
+    margin-top:20px;
+  }
+table.table-bordered > thead > tr > th{
+    border:2px solid #25b2bc;
+}
+table.table-bordered > tbody > tr > td{
+    border:2px solid #25b2bc;
+	color: #d5d8da;
+}
+.mythead{
+	background:#232530;
+	color:#25b2bc;
+}
+#fancydisc{
+	color:#d5d8da;
+}
+
+#contactbody{
+	background: #1c1e26;
+	font-family: "Roboto", sans-serif;
+	color:#d5d8da;
+}
+#contactcontent{
+	padding:5%;
+}
+#socials{
+	align-items: center;
+  	display: flex;
+  	justify-content: center;
+
+}
+#soc{
+	padding: 2%;
+}

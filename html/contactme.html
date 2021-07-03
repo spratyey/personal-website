@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title>Contact Me</title>
+	<!-- jquery import-->
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+		
+	<!--Other stuff bootstrap needs, taken from bootstrap docs-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<!--Font-awesome icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!--local js-->
+	<script src="../js/scripts.js"></script>
+
+	<!--local css-->
+	<link rel="stylesheet" href="../css/styles.css">
+
+	<!--Google fonts-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Roboto">
+</head>
+
+<body id="contactbody" onload="NavToTop();">
+	<div id="navhere">
+		<nav class="navbar navbar-expand-sm navbar-custom" id="mynavbar">
+			<div class="navbar-brand">Pratyay Suvarnapathaki</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+				<span class="fa fa-bars" style="color:#d5d8da;"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="myNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+					<a class="nav-link" href="./index.html" id="nav1">
+						<div id="navitem1" onmouseover="NavBarHover1();" onmouseout="NavBarOut1();">
+							About Me
+						</div>
+					</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="./myskills.html" id="nav2">
+						<div id="navitem2" onmouseover="NavBarHover2();" onmouseout="NavBarOut2();">
+							My Skills
+						</div>
+					</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="./contactme.html" id="nav3">
+						<div id="navitem3" onmouseover="NavBarHover3();" onmouseout="NavBarOut3();">
+							Contact Me
+						</div>
+					</a>
+					</li>
+				</ul>
+			</div>  
+		</nav>
+	</div>
+	<div id="contactcontent">
+		<h3 id="interhed">Let's Get In Touch!</h3>
+		<br>
+		<br>
+		<div id="socials">
+			<a href="https://github.com/spratyey" id="soc"><i class="fa fa-github fa-5x" style="color:#25b2bc;"></i></a>
+			<a href="https://twitter.com/spratyey" id="soc"><i class="fa fa-twitter fa-5x" style="color:#25b2bc;"></i></a>
+			<a href="https://www.facebook.com/pratyay.suvarnapathaki/" id="soc"><i class="fa fa-facebook fa-5x" style="color:#25b2bc;"></i></a>
+		</div>
+	</div>
+</body>
+</html>

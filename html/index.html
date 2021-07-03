@@ -1,0 +1,126 @@
+<html>
+<head>
+	<title>About Me</title>
+	<!--jquery import-->
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+		
+	<!--Other stuff bootstrap needs, taken from bootstrap docs-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<!--Font-awesome icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!--local js-->
+	<script src="../js/scripts.js"></script>
+
+	<!--local css-->
+	<link rel="stylesheet" href="../css/styles.css">
+
+	<!--Google fonts-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Roboto">
+</head>
+
+<body id="indexbody" onload="NavToTop();">
+	<div id="navhere">
+		<nav class="navbar navbar-expand-sm navbar-custom " id="mynavbar">
+			<div class="navbar-brand">Pratyay Suvarnapathaki</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+				<span class="fa fa-bars" style="color:#d5d8da;"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="myNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+					<a class="nav-link" href="./index.html" id="nav1">
+						<div id="navitem1" onmouseover="NavBarHover1();" onmouseout="NavBarOut1();">
+							About Me
+						</div>
+					</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="./myskills.html" id="nav2">
+						<div id="navitem2" onmouseover="NavBarHover2();" onmouseout="NavBarOut2();">
+							My Skills
+						</div>
+					</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="./contactme.html" id="nav3">
+						<div id="navitem3" onmouseover="NavBarHover3();" onmouseout="NavBarOut3();">
+							Contact Me
+						</div>
+					</a>
+					</li>
+				</ul>
+			</div>  
+		</nav>
+	</div>
+	<div class="jumbotron jumbotron-fluid" id="myjumbo">
+		<div class="row">
+			<div class="col-md-6 col-xs-6">
+				<h1 class="display-4" id="introline"><br>Hello,<br>I'm Pratyay!</h1>
+				<p class="lead" id="subhed"><br>I am a CS research student at <a href="https://iiit.ac.in" id="clglink">IIIT-H</a>.<br>I am a tech enthusiast and hobbyist graphic designer.<br>I currently live in Thane, Maharashtra.</p>
+			</div>
+			<div class="col-md-6 col-xs-6">
+				<img src="https://media.discordapp.net/attachments/859340962924462110/860892493934886942/image16.png" class="img-fluid" id="myphoto">
+			</div>	
+		</div>
+	</div>
+	<div id="aboutme">
+		<h3 id="interhed">My Personal Interests</h3>
+		
+		<ul id="interests">
+			<li>I am a big foodie, the 'live to eat' kind.</li>
+			<li>I am really into graphic design, allow me to flex a bit: I've designed the <a href="https://pingiiit.org/2021/05/may-2021/" id="maglink">May 2021 Ping! magazine</a> cover page, the UG2K20 batch logo (unofficial) and recently, the cover page for a book my grandma has written. I want to get into UI/UX too in the near future.</li>
+			<li>I play a few musical instruments but at a very basic level, namely, the keyboard, the flute and the marching-snare-drum.</li>
+			<li>In school, I was really into dramatics, participated in a lot of big inter-school events, doing improv and comedy skits mostly.</li>
+			<li>The two sports I follow closely are Chess and Sumo Wrestling (possibly the most atypical brains-and-brawn combination)</li>
+			<li>I am a FOSS enthusiast (i use arch btw)</li>
+			<li>I love watching anime, it is a fantastic visual medium, lots of really creative projects going on all the time.</li>
+			<li>I don't particularly care about music, anything that sounds good to me is good enough.</li> 
+		</ul>
+		<br><br>
+		<h3 id="interhed">My Design Work</h3>
+		<p>Here is a 5-image carousel showcasing some of my design work</p>
+		<div class="jumbotron jumbotron-fluid" id="myjumbo2">
+			<div class="row">
+				<div class="col-md-6 col-xs-6">
+					<img src="../img/1.png" onclick="Carousel();" id="mycarousel" class="img-fluid">		
+				</div>
+				<div class="col-md-6 col-xs-6" id="caroucaptions">
+					<h4 id="interhed">May 2021 Ping! Magazine Cover</h4>
+					<br>
+					<p>I made this cover page to symbolise the desire of students to return to campus, during the COVID-19 quarantine period. <br>The campus is represented as Jagruti, the famous Banyan tree which the institute logo is based on. </p>
+				</div>		
+			</div>
+		</div>
+		<br><br>
+		<br>
+		<h3 id="interhed">Random Weird Statues</h3>
+		<p>Lastly, here are two wacky looking statues I've come across while travelling (images linked externally)</p>
+		<div class="jumbotron jumbotron-fluid" id="myjumbo2">
+			<div class="row">
+				<div class="col-md-6 col-xs-6">
+					
+					<img src="https://media.discordapp.net/attachments/859340962924462110/860822036304756736/image17.png" id="davidimg">
+					<br>
+					<p style="text-align: center;">A rather unique artistic take on Michelangelo's David</p>
+					
+					
+				</div>
+				<div class="col-md-6 col-xs-6">
+					
+					<img src="https://media.discordapp.net/attachments/859340962924462110/860822060355682304/image18.png" id="uniphantimg">
+					<br>
+					<p style="text-align: center">Heard of unicorns? Here's a uniphant!</p>
+				</div>	
+			</div>
+		</div>
+		<br>
+	</div>
+</body>
+</html>
+
+
+

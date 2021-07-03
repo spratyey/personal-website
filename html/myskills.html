@@ -1,0 +1,120 @@
+<html>
+<head>
+	<title>My Skills</title>
+	<!-- jquery import-->
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+		
+	<!--Other stuff bootstrap needs, taken from bootstrap docs-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<!--Font-awesome icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!--local js-->
+	<script src="../js/scripts.js"></script>
+
+	<!--local css-->
+	<link rel="stylesheet" href="../css/styles.css">
+
+	<!--Google fonts-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Roboto">
+</head>
+
+<body id="skillbody" onload="NavToTop();">
+	<div id="navhere">
+		<nav class="navbar navbar-expand-sm navbar-custom" id="mynavbar">
+			<div class="navbar-brand">Pratyay Suvarnapathaki</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+				<span class="fa fa-bars" style="color:#d5d8da;"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="myNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+					<a class="nav-link" href="./index.html" id="nav1">
+						<div id="navitem1" onmouseover="NavBarHover1();" onmouseout="NavBarOut1();">
+							About Me
+						</div>
+					</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="./myskills.html" id="nav2">
+						<div id="navitem2" onmouseover="NavBarHover2();" onmouseout="NavBarOut2();">
+							My Skills
+						</div>
+					</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="./contactme.html" id="nav3">
+						<div id="navitem3" onmouseover="NavBarHover3();" onmouseout="NavBarOut3();">
+							Contact Me
+						</div>
+					</a>
+					</li>
+				</ul>
+			</div>  
+		</nav>
+	</div>
+	<br>
+	<br>
+	<div id="mycontent">
+	<h3 id="interhed">Rate My Skills!</h3>
+	<!--Skill Form-->
+	<form onsubmit="UpdateTable(event)" id="myskillform">
+	<div class="form-row">
+		<div class="col">
+			<label for="yourname">Your Name</label>
+			<input type="text" class="form-control" placeholder="John Doe" id="yourname" required>
+		</div>
+		<div class="col">
+			<label for="myskill">My Skill</label>
+			<input type="text" class="form-control" placeholder="HTML, Design, etc." id="myskill" required>
+		</div>
+		<div class="col">
+			<label for="myproficiency">My Proficiency</label>
+			<select class="form-control" id="myproficiency">
+				<option>Beginner</option>
+				<option>Intermediate</option>
+				<option>Proficient</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-row" id="btnrow">
+		<button type="submit" class="btn btn-primary" id="skillformsubbtn">Submit</button>
+	</div>
+	</form>
+
+	<!--Table-->
+	<table class="table table-bordered" id="skilltable">
+		<thead class="mythead">
+			<tr>
+				<th>Name</th>
+				<th>Skill</th>
+				<th>Level</th>
+			</tr>
+		</thead>
+		<tbody id="skilltablebody">
+
+		</tbody>
+	</table>
+
+	<br>
+	<br>
+	<h3 id="interhed">A Fancy Table</h3>
+	<p id="fancydisc">The above table doesn't have cells that span multiple rows/columns. Here is an example of such a table:</p>
+	<table class="table table-bordered" id="skilltable">
+		<tbody id="skilltablebody">
+			<tr>
+				<td rowspan="2" align=center>This cell spans two rows</td>
+				<td>Something else</td>
+				<td>No idea what else</td>
+			</tr>
+			<tr>
+				<td colspan=2 align=center>This cell spans two columns</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</div>
+</html>
